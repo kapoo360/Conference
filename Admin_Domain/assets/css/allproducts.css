@@ -1,0 +1,192 @@
+/* Container Styling */
+#product-management-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Table Styling */
+#product-management-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+#product-management-table thead {
+    background-color:     #418fcb;
+    color: #fff;
+}
+
+#product-management-table thead th {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #0056b3;
+}
+
+#product-management-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#product-management-table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+#product-management-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+#product-management-table td img {
+    border-radius: 4px;
+    max-width: 100px; /* Adjust if necessary */
+    height: auto;
+}
+
+/* Description Column Styling */
+#product-management-table td.description {
+    max-width: 200px; /* Adjust this value as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px; /* Adjust font size if needed */
+}
+
+/* Buttons Styling */
+#product-management-table .btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+#edit-product-btn {
+    background-color: #28a745;
+}
+
+#edit-product-btn:hover {
+    background-color: #218838;
+}
+
+#delete-product-btn {
+    background-color: #dc3545;
+}
+
+#delete-product-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #product-management-table {
+        font-size: 14px;
+    }
+
+    #product-management-table th, 
+    #product-management-table td {
+        padding: 8px;
+    }
+
+    #product-management-table td img {
+        max-width: 80px; /* Adjust if necessary */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button.btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.btn:hover {
+    background-color: #45a049;
+}

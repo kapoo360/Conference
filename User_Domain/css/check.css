@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container for the checkout screen */
+.checkout-screen {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #c6d9f1, #aad5f6);
+    background: white;
+    color: white;
+    padding: 20px;
+}
+
+/* Card container */
+.checkout-card {
+    display: flex;
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    max-width: 900px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* Left side of the card */
+.card-left {
+    background: white;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Product image */
+.product-image {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Right side of the card */
+.card-right {
+    width: 60%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Text and input styles */
+h1, h2 {
+    margin: 0 0 1rem;
+    color: #333;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+.input-field, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Button styles */
+.submit-button {
+    background: linear-gradient(135deg, #0c5abf, #418fcb);
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .checkout-card {
+        flex-direction: column;
+    }
+
+    .card-left, .card-right {
+        width: 100%;
+    }
+
+    .product-image {
+        width: 70%;
+    }
+}
+/* Card container */
+.checkout-card {
+    display: flex;
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    max-width: 900px;
+    height: 800px; /* Set a specific height */
+    max-height: 90vh; /* Ensure it doesn't exceed the viewport height */
+    overflow: hidden;
+    margin: 0 auto;
+    flex-direction: row; /* Ensure the card layout is maintained */
+}
+
+/* Adjustments for the left and right side if needed */
+.card-left, .card-right {
+    flex: 1;
+}
+
+/* Content inside the card */
+.card-left {
+    background: #030303;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    overflow: hidden; /* Ensure image stays within bounds */
+}
+
+.card-right {
+    padding: 2rem;
+    overflow-y: auto; /* Add scroll if content overflows */
+}
+
+
+#placeorder{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}

@@ -1,0 +1,125 @@
+       /* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* Centered horizontally and a little down from the top */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 8px; /* Rounded corners */
+    width: 90%;
+    max-width: 600px; /* Max width for larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    position: relative; /* For positioning the close button */
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Heading */
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333; /* Darker text for better readability */
+}
+
+/* Form Labels and Inputs */
+.modal-content label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555; /* Slightly darker text */
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.modal-content input[type="text"]:focus,
+.modal-content input[type="email"]:focus,
+.modal-content input[type="password"]:focus {
+    border-color: #4CAF50; /* Highlight border color on focus */
+    outline: none;
+}
+
+/* Submit Button */
+.modal-content button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.modal-content button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+.add-btn {
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .add-btn:hover {
+            background-color: #45a049;
+        }
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .modal-content {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .modal-content h2 {
+        font-size: 1.2em;
+    }
+
+    .modal-content input,
+    .modal-content button {
+        font-size: 14px;
+    }
+}
+
+

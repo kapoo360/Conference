@@ -1,0 +1,186 @@
+/* Users Table Container */
+.user-management-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Table Styling */
+.user-management-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.user-management-table thead {
+    background-color: #418fcb;
+    color: #fff;
+}
+
+.user-management-table thead th {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #0056b3;
+}
+
+.user-management-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.user-management-table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.user-management-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Actions Column */
+.user-management-table .user-management-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.user-management-table .user-management-btn.edit-btn {
+    background-color: #28a745;
+}
+
+.user-management-table .user-management-btn.edit-btn:hover {
+    background-color: #218838;
+}
+
+.user-management-table .user-management-btn.delete-btn {
+    background-color: #dc3545;
+}
+
+.user-management-table .user-management-btn.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .user-management-table {
+        font-size: 14px;
+    }
+
+    .user-management-table th, 
+    .user-management-table td {
+        padding: 8px;
+    }
+}
+
+
+
+
+/* Modal Container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto; /* Increased margin for centering */
+    padding: 30px; /* Increased padding */
+    border: 1px solid #888;
+    width: 90%; /* Slightly wider to accommodate larger content */
+    max-width: 600px; /* Increased maximum width */
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Larger shadow for better visibility */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button.edit-user-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.edit-user-btn:hover {
+    background-color: #45a049;
+}

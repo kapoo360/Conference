@@ -1,0 +1,81 @@
+/* Sidebar styles */
+.sidebar {
+    position: relative; /* Ensure the sidebar is positioned relative to the button */
+}
+#nav{
+    margin-top: 60px;
+    margin-bottom: -30px;
+}
+
+#sidebarCollapse {
+    position: fixed;
+    top: 40px; /* Adjust top spacing as needed */
+    right: 20px; /* Adjust right spacing as needed */
+    z-index: 1000; /* Ensure it's on top of other elements */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#sidebarCollapse img {
+    width: 40px; /* Adjust the size of the button icon as needed */
+    height: auto;
+}
+
+/* Sidebar navigation styles */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* Width of the sidebar */
+    background-color: #fff; /* Background color of the sidebar */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3); /* Optional shadow for the sidebar */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+#sidebar.active {
+    transform: translateX(0);
+}
+
+#dismiss {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Sidebar list styles */
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+}
+
+.list-unstyled li {
+    padding: 10px 15px;
+}
+
+.list-unstyled li a {
+    text-decoration: none;
+    color: #333; /* Text color */
+    font-size: 16px; /* Font size */
+}
+
+.list-unstyled li.active a {
+    font-weight: bold; /* Active link styling */
+}
+
+.list-unstyled li a:hover {
+    color: #007bff; /* Hover color */
+}
+
+/* CSS for the sidebar logo */
+.sidebar-logo {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures the image behaves as a block element */
+    margin: 0 auto; /* Center align horizontally */
+    margin-top: 0px;
+}

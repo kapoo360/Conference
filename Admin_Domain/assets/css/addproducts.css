@@ -1,0 +1,88 @@
+/* Add Product Container */
+#add-product-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Add Product Heading */
+#add-product-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Form Styling */
+#add-product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Form Controls */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Textarea */
+#product-description {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Label Styling */
+label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Button Styling */
+#add-product-btn {
+    background-color: #4CAF50; /* Green */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#add-product-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #add-product-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    #add-product-heading {
+        font-size: 20px;
+    }
+
+    .form-control {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #product-description {
+        height: 80px;
+    }
+
+    #add-product-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
